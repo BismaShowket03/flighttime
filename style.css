@@ -1,0 +1,218 @@
+
+
+body{
+    background-color: black;
+}
+
+.div1 {
+    margin: 0;
+    background-color: black;
+    display: flex;
+    
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+  }
+  
+  .container {
+    height: 100vh;
+    width: 100vw;
+    max-height: 600px;
+    max-width: 1200px;
+    min-height: 600px;
+    min-width: 1100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .panel {
+    height: 270px;
+    width: 190px;
+    position: relative;
+  
+    &:hover {
+      .card {
+        filter: blur(1.5px);
+      }
+      .card1 {
+        background-size: 215% 135%;
+      }
+      .card2 {
+        background-size: 115% 115%;
+      }
+      .card3 {
+        background-size: 155% 115%;
+      }
+      .title {
+        color: rgba(255, 255, 255, 0.2);
+      }
+      .border {
+        border: 1px solid rgba(255, 255, 255, 1);
+      }
+      .slide {
+        bottom: 0px;
+      }
+      .ring:before,
+      .ring:after {
+        transform: translateX(-50%) translateY(-50%) rotate(310deg);
+      }
+    }
+  }
+  .ring,
+  .card,
+  .border,
+  .slide,
+  .line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ring {
+    color: #fffbf1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 170px;
+  }
+  
+  .card {
+    background: #f0ead6;
+    position: relative;
+    transition: all 1s;
+    height: 270px;
+    width: 190px;
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+  
+  .card1 {
+    background-image: url("https://images.unsplash.com/photo-1616190419596-e2839e7380d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80");
+    
+    background-repeat: no-repeat;
+    background-size: 200% 120%;
+  }
+  
+  .card2 {
+    background-image: url("https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/brazil-famous-for.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .card3 {
+    background-image: url("https://resources.thomascook.in/images/holidays/sightSeeing/PyramidsGiza2.jpg");
+    background-repeat: no-repeat;
+    background-size: 140% 100%;
+  }
+  .card4 {
+    background-image: url("https://c.myholidays.com/blog/blog/content/images/2020/11/Best-Places-To-Visit-In-Australia.jpg");
+    background-repeat: no-repeat;
+    background-size: 140% 100%;
+  }
+  
+  .card5 {
+    background-image: url("https://images.pexels.com/photos/3835461/pexels-photo-3835461.jpeg?cs=srgb&dl=pexels-alex-chistol-3835461.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-size: 140% 100%;
+  }
+  
+  .card6 {
+    background-image: url("https://img.freepik.com/premium-vector/dubai-skyline-uae-futuristic-cityscape-illuminated-by-neon-lights_474577-41.jpg?w=360");
+    background-repeat: no-repeat;
+    background-size: 140% 100%;
+  }
+  
+  
+  .ring:before,
+  .ring:after {
+    content: "";
+    padding: 0.7em 0.4em;
+    position: absolute;
+    left: 50%;
+    width: 115%;
+    top: 50%;
+    display: block;
+    border: 5px solid #50c9c3;
+    border-radius: 50%;
+    transition: transform 1s;
+    transform: translateX(-50%) translateY(-50%) rotate(50deg);
+  }
+  
+  .ring:before {
+    border-color: rgb(166, 20, 20) rgb(235, 235, 235) rgba(0, 0, 0, 0)
+      rgba(0, 0, 0, 0);
+    z-index: -1;
+  }
+  
+  .ring:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(235, 235, 235)
+      rgb(235, 235, 235);
+  }
+  
+  p {
+    text-align: center;
+    position: absolute;
+    font-family: "Playfair Display";
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+    transition: all 1s;
+    top: 0;
+  }
+  
+  .para {
+    bottom: 0;
+    font-size: 16px;
+    font-family: "Raleway";
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .border {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    height: 260px;
+    width: 180px;
+    transition: border 1s;
+    overflow: hidden;
+  }
+  
+  .slide {
+    height: 260px;
+    width: 180px;
+    position: absolute;
+    border: 1px solid black;
+    bottom: -270px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: bottom 1s;
+    flex-direction: column;
+  }
+  
+  .fa-plane {
+    font-size: 16px;
+  }
+h1{
+    color: aqua;
+    
+    justify-content: center;
+    
+
+  }
+
+  h1{
+    color:white;
+    margin-left: 1090px;
+   
+  font-family: 'Noto Sans JP', sans-serif;
+}
+ul{
+  background-color:white;
+  padding-left: 1300px;
+}
+
+
